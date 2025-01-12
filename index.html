@@ -10,6 +10,9 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f9;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
         header {
             background-color: #333;
@@ -32,6 +35,7 @@
             text-decoration: underline;
         }
         main {
+            flex-grow: 1;
             padding: 2rem;
             text-align: center;
         }
@@ -40,9 +44,13 @@
             color: white;
             text-align: center;
             padding: 1rem;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
+            margin-top: auto;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
         }
     </style>
 </head>
@@ -58,7 +66,7 @@
     <main>
         <h2>Hello, World!</h2>
         <p>heh heh heh heh</p>
-        <img src="assets/yung.jpg" alt="Young me" style="max-width: 50%; height: auto;">
+        <img src="assets/yung.jpg" alt="Young me" style="max-width: 100%; height: auto;">
     </main>
     <footer>
         <p>&copy; 2025 Darian Rowat. All rights reserved.</p>
