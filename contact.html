@@ -1,130 +1,112 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Darian Rowat</title>
-    <style>
-        @font-face {
-            font-family: 'Hacked';
-            src:url('./assets/fonts/Hacked-KerX.ttf') format('truetype');
-            font-weight: normal;
-            font-style: normal;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #0B0C10; /* Updated dark background */
-            background-image: url('assets/circuit5.png'); /* Add background image */
-            background-size: cover; /* Ensure the image covers the entire background */
-            background-position: center; /* Center the background image */
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            }
-        header {
-            background-color: #1F2833; /* Updated slightly darker background */
-            color: #66FCF1; /* Highlight color */
-            padding: 1rem;
-            text-align: center;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #1F2833; /* Match header background */
-            padding: 0.5rem;
-        }
-        nav a {
-            color: #66FCF1; /* Highlight for links */
-            text-decoration: none;
-            margin: 0 1rem;
-        }
-        nav a:hover {
-            color: #45A29E; /* Accent color on hover */
-            text-decoration: underline;
-        }
-        main {
-            flex-grow: 1;
-            padding: 2rem;
-            text-align: center;
-            color: #C5C6C7; /* Ensure main text is visible */
-        }
-        footer {
-            background-color: #1F2833; /* Match nav/header background */
-            color: #C5C6C7; /* Regular text color */
-            text-align: center;
-            padding: 1rem;
-            margin-top: auto;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 20px auto; /* Add spacing around the image */
-            border: 5px solid #45A29E; /* Add border to match the accent color */
-            border-radius: 10px; /* Slightly round the corners */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
-        }
-    button {
-        background-color: #45A29E; /* Accent color */
-        color: #0B0C10; /* Dark background color for text */
-        border: 0;
-        padding: 10px 20px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 10px 2px;
-        cursor: pointer;
-        border-radius: 5px; /* Slightly round the corners */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Darian Rowat</title>
 
-    button.nav-button {
-        background-color: #45A29E; /* Accent color */
-        color: #0B0C10; /* Dark background color for text */
-        border: 0;
-        padding: 10px 20px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 10px 2px;
-        cursor: pointer;
-        border-radius: 5px; /* Slightly round the corners */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
-    }
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              bg: '#0B0C10',
+              panel: '#1F2833',
+              accent: '#45A29E',
+              highlight: '#66FCF1',
+              text: '#C5C6C7',
+            },
+            fontFamily: {
+              hacked: ['Hacked', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            },
+          },
+        },
+      };
+    </script>
 
-    button.nav-button:hover {
-        background-color: #66FCF1; /* Highlight color on hover */
-        color: #1F2833; /* Darker background color for text on hover */
-    }
+    <link rel="stylesheet" href="assets/site.css" />
+  </head>
 
-    button:hover {
-        background-color: #66FCF1; /* Highlight color on hover */
-        color: #1F2833; /* Darker background color for text on hover */
-    }
-    </style>
-</head>
-<body>
-    <header>
-        <h1 style="font-family: 'Hacked', sans-serif; font-size: 48px;">DARIAN ROWAT</h1>
-    </header>
-    <nav>
-        <!------------------------>
-        <!-- Navigation buttons -->
-        <!------------------------> 
-        <button class="nav-button" style="margin: 0 15px;" onclick="location.href='index.html'">Home</button>
-        <button class="nav-button" style="margin: 0 15px;" onclick="location.href='about.html'">About</button>
-        <button class="nav-button" style="margin: 0 15px;" onclick="location.href='contact.html'">Contact</button>
-        <button class="nav-button" style="margin: 0 15px;" onclick="location.href='page_unav.html'">Tab System</button>
-    </nav>
-    <main>
-        <h2>This is the Contact page.</h2>
-    </main>
-    <footer>
-        <p>&copy; 2026 Darian Rowat. All rights reserved.</p>
-    </footer>
-</body>
+  <body class="bg-bg text-text">
+    <div class="relative min-h-screen">
+      <div class="absolute inset-0 bg-[url('assets/circuit5.png')] bg-cover bg-center"></div>
+      <div class="absolute inset-0 bg-black/70"></div>
+
+      <div class="relative flex min-h-screen flex-col">
+        <div id="site-header"></div>
+        <div id="site-nav"></div>
+
+        <main class="flex-1">
+          <div class="mx-auto max-w-5xl px-4 py-10">
+            <div class="rounded-2xl border border-highlight/15 bg-panel/60 p-6 shadow-xl backdrop-blur sm:p-8">
+              <h2 class="text-3xl font-bold tracking-tight text-highlight sm:text-4xl">Contact</h2>
+              <p class="mt-4 text-text/90">
+                Fastest way: email or a quick message here. (This form is client-side only — it opens your email app.)
+              </p>
+
+              <div class="mt-6 grid gap-6 md:grid-cols-2">
+                <div class="rounded-xl border border-highlight/10 bg-bg/40 p-5">
+                  <div class="text-sm font-semibold text-highlight">Direct</div>
+                  <div class="mt-3 space-y-2 text-sm text-text/85">
+                    <p>
+                      <span class="font-semibold text-text">Email:</span>
+                      <a class="text-highlight hover:underline" href="mailto:your.email@example.com">your.email@example.com</a>
+                    </p>
+                    <p>
+                      <span class="font-semibold text-text">GitHub:</span>
+                      <a class="text-highlight hover:underline" href="#">add-link-here</a>
+                    </p>
+                    <p>
+                      <span class="font-semibold text-text">LinkedIn:</span>
+                      <a class="text-highlight hover:underline" href="#">add-link-here</a>
+                    </p>
+                  </div>
+                </div>
+
+                <form
+                  class="rounded-xl border border-highlight/10 bg-bg/40 p-5"
+                  onsubmit="event.preventDefault();
+                    const name=document.getElementById('c_name').value.trim();
+                    const msg=document.getElementById('c_msg').value.trim();
+                    const subject=encodeURIComponent('Website contact from ' + (name||'Someone'));
+                    const body=encodeURIComponent((msg||'') + '\n\n— ' + (name||''));
+                    window.location.href='mailto:your.email@example.com?subject='+subject+'&body='+body;"
+                >
+                  <div class="text-sm font-semibold text-highlight">Message</div>
+
+                  <label class="mt-4 block text-sm text-text/80" for="c_name">Name</label>
+                  <input
+                    id="c_name"
+                    type="text"
+                    placeholder="Your name"
+                    class="mt-1 w-full rounded-lg border border-highlight/15 bg-panel/50 px-3 py-2 text-sm text-text placeholder:text-text/40 outline-none focus:border-highlight/50 focus:ring-2 focus:ring-highlight/30"
+                  />
+
+                  <label class="mt-4 block text-sm text-text/80" for="c_msg">Message</label>
+                  <textarea
+                    id="c_msg"
+                    rows="5"
+                    placeholder="What can I help with?"
+                    class="mt-1 w-full resize-y rounded-lg border border-highlight/15 bg-panel/50 px-3 py-2 text-sm text-text placeholder:text-text/40 outline-none focus:border-highlight/50 focus:ring-2 focus:ring-highlight/30"
+                  ></textarea>
+
+                  <button
+                    type="submit"
+                    class="mt-4 inline-flex items-center justify-center rounded-md bg-accent px-4 py-2 text-sm font-semibold text-bg shadow transition hover:bg-highlight hover:text-panel focus:outline-none focus:ring-2 focus:ring-highlight/60 focus:ring-offset-2 focus:ring-offset-bg"
+                  >
+                    Open email
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </main>
+
+        <div id="site-footer"></div>
+      </div>
+    </div>
+
+    <script src="assets/site.js"></script>
+  </body>
 </html>
