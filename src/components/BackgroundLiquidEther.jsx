@@ -5,9 +5,9 @@ export default function BackgroundLiquidEther() {
     <div className="fixed inset-0 -z-10">
       <LiquidEther
         className="w-full h-full"
-        colors={["#5227FF", "#FF9FFC", "#B19EEF"]}
-        mouseForce={20}
-        cursorSize={100}
+        colors={["#e90707", "#f51450", "#f9f110"]}
+        mouseForce={30}
+        cursorSize={105}
         isViscous={false}
         viscous={30}
         iterationsViscous={32}
