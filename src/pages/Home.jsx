@@ -1,3 +1,5 @@
+import DecryptedText from "../components/DecryptedText";
+
 export default function Home() {
   return (
     <section className="px-4 py-10 sm:px-6">
@@ -10,8 +12,10 @@ export default function Home() {
           />
 
           <div className="text-center sm:text-left">
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Hello, World!</h2>
-            <p className="mt-3 text-lg text-white/85">heh heh heh heh</p>
+            <DecryptedText text="Hello, I'm Darian. Welcome to my website!"
+                    className="text-3xl font-bold tracking-tight"
+                    encryptedClassName="text-3xl font-bold tracking-tight text-white/60"/>
+            <p className="mt-3 text-lg text-white/85">Get to know me!</p>
 
             <div className="mt-6 grid gap-3 sm:grid-cols-2">
               <a
