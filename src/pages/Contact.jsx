@@ -59,7 +59,7 @@ export default function Contact() {
               value={name}
               onChange={(e) => setName(e.target.value)}
               type="text"
-              placeholder="Darian Rowat"
+              placeholder="Your name"
               className="mt-1 w-full rounded-lg border border-white/10 bg-white/5 px-3 py-2 text-sm text-white placeholder:text-white/40 outline-none focus:border-white/25 focus:ring-2 focus:ring-white/15"
             />
 
