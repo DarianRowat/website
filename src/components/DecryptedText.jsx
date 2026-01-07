@@ -3,16 +3,16 @@ import { motion } from 'motion/react';
 
 export default function DecryptedText({
   text,
-  speed = 50,
+  speed = 80,
   maxIterations = 10,
-  sequential = false,
+  sequential = true,
   revealDirection = 'start',
   useOriginalCharsOnly = false,
   characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%^&*()_+',
   className = '',
   parentClassName = '',
   encryptedClassName = '',
-  animateOn = 'hover',
+  animateOn = 'view', // 'hover', 'view', 'both', 'none'
   ...props
 }) {
   const [displayText, setDisplayText] = useState(text);
