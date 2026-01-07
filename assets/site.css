@@ -1,0 +1,19 @@
+/* Shared site styles (kept tiny on purpose). */
+
+@font-face {
+  font-family: 'Hacked';
+  src: url('./fonts/Hacked-KerX.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Prevent layout shift when the scrollbar appears/disappears */
+html {
+  scrollbar-gutter: stable;
+}
