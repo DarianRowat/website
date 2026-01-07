@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Hacked";
+  src: url("/assets/fonts/Hacked-KerX.ttf") format("truetype");
+  font-display: swap;
+}
+
+html { scroll-behavior: smooth; }
