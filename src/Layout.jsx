@@ -8,7 +8,7 @@ const linkClass = ({ isActive }) =>
 
 export default function Layout() {
   return (
-    <div className="min-h-screen text-white relative">
+    <div className="min-h-screen flex flex-col text-white relative">
       <BackgroundLiquidEther />
 
       {/* Header/Nav */}
@@ -26,12 +26,12 @@ export default function Layout() {
       </header>
 
       {/* Page */}
-      <main className="relative z-10 max-w-5xl mx-auto">
+      <main className="relative z-10 flex-1 max-w-5xl mx-auto w-full">
         <Outlet />
       </main>
 
       {/* Footer */}
-      <footer className="relative z-10 mt-10 border-t border-white/10 bg-black/20">
+      <footer className="relative z-10 border-t border-white/10 bg-black/20">
         <div className="max-w-5xl mx-auto px-6 py-6 text-sm text-white/70">
           © {new Date().getFullYear()} Darian Rowat
         </div>
