@@ -1,5 +1,7 @@
 import { NavLink, Outlet } from "react-router-dom";
 import BackgroundLiquidEther from "./components/BackgroundLiquidEther";
+import BackgroundColorBends from "./components/BackgroundColorBends";
+
 
 const linkClass = ({ isActive }) =>
   `px-3 py-2 rounded-xl text-sm transition border ${
