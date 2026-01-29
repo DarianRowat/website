@@ -1,4 +1,5 @@
 import DecryptedText from "../components/DecryptedText";
+import TextType from "../components/TextType";
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
           />
 
           <div className="text-center sm:text-left">
-            <DecryptedText text="Hello, I'm Darian. Welcome to my website!"
+            <TextType text="Hello, I'm Darian. Welcome to my website!"
                     className="text-3xl font-bold tracking-tight"
                     encryptedClassName="text-3xl font-bold tracking-tight text-white/60"/>
             <p className="mt-3 text-lg text-white/85">Get to know me!</p>

@@ -15,9 +15,7 @@ export default function Contact() {
   return (
     <section className="px-4 py-10 sm:px-6">
       <div className="rounded-2xl border border-white/10 bg-white/10 p-6 shadow-xl backdrop-blur sm:p-8">
-        <DecryptedText text="Contact"
-                className="text-3xl font-bold tracking-tight"
-                encryptedClassName="text-3xl font-bold tracking-tight text-white/60"/>
+        <h1 className="text-3xl font-bold tracking-tight">Contact</h1>
         <p className="mt-4 text-white/85">{/* Intro text about contacting me */}</p>
 
         <div className="mt-6 grid gap-6 md:grid-cols-2">

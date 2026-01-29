@@ -1,5 +1,5 @@
 import { NavLink, Outlet } from "react-router-dom";
-import BackgroundLiquidEther from "./components/BackgroundLiquidEther";
+//import BackgroundLiquidEther from "./components/BackgroundLiquidEther";
 import BackgroundColorBends from "./components/BackgroundColorBends";
 
 
@@ -11,7 +11,7 @@ const linkClass = ({ isActive }) =>
 export default function Layout() {
   return (
     <div className="min-h-screen flex flex-col text-white relative">
-      <BackgroundLiquidEther />
+      <BackgroundColorBends />
 
       {/* Header/Nav */}
       <header className="sticky top-0 z-20 backdrop-blur bg-black/30 border-b border-white/10">
