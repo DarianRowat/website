@@ -1,5 +1,7 @@
 import DecryptedText from "../components/DecryptedText";
 import { useState } from "react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 export default function Contact() {
   const [name, setName] = useState("");
@@ -23,24 +25,35 @@ export default function Contact() {
             <div className="text-sm font-semibold">Direct</div>
             <div className="mt-3 space-y-2 text-sm text-white/75">
               <p>
-                <span className="font-semibold text-white">Email:</span>{" "}
-                <a className="underline decoration-white/30 hover:decoration-white" href="mailto:darianrowat@gmail.com">
-                  darianrowat@gmail.com
-                </a>
-              </p>
-              <p>
-                <span className="font-semibold text-white">GitHub:</span>{" "}
-                <a className="underline decoration-white/30 hover:decoration-white" href="https://github.com/darianrowat">
-                  https://github.com/darianrowat
-                </a>
-              </p>
-              <p>
-                <span className="font-semibold text-white">LinkedIn:</span>{" "}
+                
                 <a
-                  className="underline decoration-white/30 hover:decoration-white"
-                  href="https://www.linkedin.com/in/darianrowat/"
+                  href="mailto:darianrowat@gmail.com"
+                  className="inline-flex items-center gap-2 underline decoration-white/30 hover:decoration-white"
                 >
-                  https://www.linkedin.com/in/darianrowat/
+                  <MdEmail className="text-xl" aria-hidden="true" />
+                  <span>DarianRowat@gmail.com</span>
+                </a>
+              </p>
+              <p>
+                <a
+                  href="https://github.com/darianrowat"
+                  className="inline-flex items-center gap-2 underline decoration-white/30 hover:decoration-white"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FaGithub className="text-xl" aria-hidden="true" />
+                  <span>DarianRowat</span>
+                </a>
+              </p>
+              <p>
+                <a
+                  href="https://www.linkedin.com/in/darianrowat/"
+                  className="inline-flex items-center gap-2 underline decoration-white/30 hover:decoration-white"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FaLinkedin className="text-xl" aria-hidden="true" />
+                  <span>LinkedIn</span>
                 </a>
               </p>
             </div>
