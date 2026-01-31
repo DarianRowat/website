@@ -49,12 +49,13 @@ const toolLogos = [
 export default function Home() {
   return (
     <section className="px-4 py-10 sm:px-6">
-      <div className="rounded-2xl border border-white/10 bg-white/10 p-6 shadow-xl backdrop-blur sm:p-8">
+      <div className="rounded-2xl border border-white/10 bg-black/60 p-6 shadow-xl backdrop-blur sm:p-8">
         <div className="flex flex-col items-center gap-6 sm:flex-row sm:items-start">
+          {/* Me */}
           <img
-            src="/assets/ShirtnTie.jpg"
-            alt="Young me"
-            className="w-40 shrink-0 rounded-xl border-2 border-white/20 shadow-lg"
+            src="/assets/MeBC.png"
+            alt="Me at Kootenay National Park"
+            className="w-56 shrink-0 rounded-xl border-1 border-white/20 shadow-lg"
           />
           {/* Intro Section */}
           <div className="text-center sm:text-left">
@@ -92,7 +93,7 @@ export default function Home() {
 
       {/* Logo loop (Tools) */}
       <div className="mt-8">
-        <div className="rounded-2xl border border-white/10 bg-white/10 shadow-xl backdrop-blur">
+        <div className="rounded-2xl border border-white/10 bg-black/60 shadow-xl backdrop-blur">
           <div className="relative h-[140px] overflow-hidden px-6 flex items-center">
             <LogoLoop
               logos={toolLogos}
@@ -114,20 +115,20 @@ export default function Home() {
 
       {/* Info Section */}
       <div className="mt-8 grid gap-4 sm:grid-cols-3">
-        <div className="rounded-2xl border border-white/10 bg-white/10 p-5 backdrop-blur">
+        <div className="rounded-2xl border border-white/10 bg-black/60 p-5 backdrop-blur">
           <div className="text-sm font-semibold">Focus</div>
           <p className="mt-2 text-sm text-white/75">
             Big fan of embedded systems, hardware verification, and telecommunications.
           </p>
         </div>
 
-        <div className="rounded-2xl border border-white/10 bg-white/10 p-5 backdrop-blur">
+        <div className="rounded-2xl border border-white/10 bg-black/60 p-5 backdrop-blur">
           <div className="text-sm font-semibold">Current</div>
           <p className="mt-2 text-sm text-white/75">In my final semester I am learning about software analysis, design of advanced digital systems,
           ethics in engineering, as well as my capstone project.</p>
         </div>
 
-        <div className="rounded-2xl border border-white/10 bg-white/10 p-5 backdrop-blur">
+        <div className="rounded-2xl border border-white/10 bg-black/60 p-5 backdrop-blur">
           <div className="text-sm font-semibold">Tools</div>
           <p className="mt-2 text-sm text-white/75">
             <li>SystemVerilog, UVM</li>

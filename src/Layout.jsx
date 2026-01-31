@@ -5,7 +5,7 @@ import BackgroundColorBends from "./components/BackgroundColorBends";
 
 const linkClass = ({ isActive }) =>
   `px-3 py-2 rounded-xl text-sm transition border ${
-    isActive ? "bg-white/15 border-white/15" : "border-transparent hover:bg-white/10"
+    isActive ? "bg-white/5 border-white/15" : "border-transparent hover:bg-white/15"
   }`;
 
 export default function Layout() {
@@ -14,7 +14,7 @@ export default function Layout() {
       <BackgroundColorBends />
 
       {/* Header/Nav */}
-      <header className="sticky top-0 z-20 backdrop-blur bg-black/30 border-b border-white/10">
+      <header className="sticky top-0 z-20 backdrop-blur bg-black/60 border-b border-white/10">
         <div className="max-w-5xl mx-auto flex items-center justify-between px-6 py-4">
           <div className="font-semibold tracking-tight">Darian Rowat</div>
 
@@ -34,7 +34,7 @@ export default function Layout() {
       </main>
 
       {/* Footer */}
-      <footer className="relative z-10 border-t border-white/10 bg-black/20">
+      <footer className="relative z-10 border-t border-white/10 bg-black/60">
         <div className="max-w-5xl mx-auto px-6 py-6 text-sm text-white/70">
           © {new Date().getFullYear()} Darian Rowat
         </div>

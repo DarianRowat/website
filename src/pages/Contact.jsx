@@ -16,14 +16,14 @@ export default function Contact() {
 
   return (
     <section className="px-4 py-10 sm:px-6">
-      <div className="rounded-2xl border border-white/10 bg-white/10 p-6 shadow-xl backdrop-blur sm:p-8">
+      <div className="rounded-2xl border border-white/10 bg-black/60 p-6 shadow-xl backdrop-blur sm:p-8">
         <h1 className="text-3xl font-bold tracking-tight">Contact</h1>
         <p className="mt-4 text-white/85">{/* Intro text about contacting me */}</p>
 
         <div className="mt-6 grid gap-6 md:grid-cols-2">
-          <div className="rounded-xl border border-white/10 bg-black/20 p-5">
+          <div className="rounded-xl border border-white/10 bg-black/80 p-5">
             <div className="text-sm font-semibold">Direct</div>
-            <div className="mt-3 space-y-2 text-sm text-white/75">
+            <div className="mt-3 space-y-2 text-white/75">
               <p>
                 
                 <a
@@ -59,7 +59,7 @@ export default function Contact() {
             </div>
           </div>
 
-          <form onSubmit={openEmail} className="rounded-xl border border-white/10 bg-black/20 p-5">
+          <form onSubmit={openEmail} className="rounded-xl border border-white/10 bg-black/80 p-5">
             <div className="text-sm font-semibold">Message</div>
 
             <label className="mt-4 block text-sm text-white/70" htmlFor="c_name">

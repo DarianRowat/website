@@ -27,7 +27,7 @@ export default function Projects() {
 
   return (
     <section className="px-4 py-10 sm:px-6">
-      <div className="rounded-2xl border border-white/10 bg-white/10 p-6 shadow-xl backdrop-blur sm:p-8">
+      <div className="rounded-2xl border border-white/10 bg-black/60 p-6 shadow-xl backdrop-blur sm:p-8">
         <h2 className="text-3xl font-bold tracking-tight">Projects</h2>
         <p className="mt-3 text-white/85">
           Some of the projects I've worked on:
@@ -39,7 +39,7 @@ export default function Projects() {
             items={items}
             speed={15}
             textColor="#ffffff"
-            bgColor="rgba(0,0,0,0.4)"        
+            bgColor="rgba(0,0,0,0.8)"        
             marqueeBgColor="#ffffff"
             marqueeTextColor="#060010"
             borderColor="rgba(255,255,255,0.25)"

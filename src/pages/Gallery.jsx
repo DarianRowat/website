@@ -37,7 +37,7 @@ export default function Gallery() {
 
   return (
     <section className="px-4 py-10 sm:px-6">
-      <div className="rounded-2xl border border-white/10 bg-white/10 p-6 shadow-xl backdrop-blur sm:p-8">
+      <div className="rounded-2xl border border-white/10 bg-black/60 p-6 shadow-xl backdrop-blur sm:p-8">
         <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">Gallery</h2>
 
         <div className="mt-6">
