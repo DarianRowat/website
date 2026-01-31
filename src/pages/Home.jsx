@@ -10,11 +10,13 @@ import { GiBeehive, GiCircuitry, GiHockey, GiHoneycomb } from "react-icons/gi";
 import { CgBee, } from "react-icons/cg";
 import { FaMicrochip } from "react-icons/fa6";
 import { TbCircuitDiode, TbCircuitResistor } from "react-icons/tb";
-import { FaNetworkWired, FaCanadianMapleLeaf } from "react-icons/fa";
+import { FaNetworkWired, FaCanadianMapleLeaf, FaLinux, FaWindows } from "react-icons/fa";
 import { MdEngineering } from "react-icons/md";
 
 
 const toolLogos = [
+  { node: <FaLinux />, title: "Linux", href: "https://www.linux.org" },
+  { node: <FaWindows />, title: "Windows", href: "https://www.microsoft.com/windows" },
   { node: <SiReact />, title: "React", href: "https://react.dev" },
   { node: <SiVite />, title: "Vite", href: "https://vitejs.dev" },
   //{ node: <SiTailwindcss />, title: "Tailwind CSS", href: "https://tailwindcss.com" },
