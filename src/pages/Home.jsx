@@ -1,5 +1,48 @@
-import DecryptedText from "../components/DecryptedText";
+//import DecryptedText from "../components/DecryptedText";
 import TextType from "../components/TextType";
+import LogoLoop from "../components/LogoLoop";
+import {
+  SiReact, SiVite, SiTailwindcss, SiNodedotjs, SiJavascript, SiPython,
+  SiDocker, SiGit, SiMysql, SiC, SiArduino,
+  SiRaspberrypi, SiMqtt, SiAutodesk
+} from "react-icons/si";
+import { GiBeehive, GiCircuitry, GiHockey, GiHoneycomb } from "react-icons/gi";
+import { CgBee, } from "react-icons/cg";
+import { FaMicrochip } from "react-icons/fa6";
+import { TbCircuitDiode, TbCircuitResistor } from "react-icons/tb";
+import { FaNetworkWired, FaCanadianMapleLeaf } from "react-icons/fa";
+import { MdEngineering } from "react-icons/md";
+
+
+const toolLogos = [
+  { node: <SiReact />, title: "React", href: "https://react.dev" },
+  { node: <SiVite />, title: "Vite", href: "https://vitejs.dev" },
+  //{ node: <SiTailwindcss />, title: "Tailwind CSS", href: "https://tailwindcss.com" },
+  //{ node: <SiNodedotjs />, title: "Node.js", href: "https://nodejs.org" },
+  { node: <SiJavascript />, title: "JavaScript", href: "https://developer.mozilla.org/docs/Web/JavaScript" },
+  { node: <SiPython />, title: "Python", href: "https://www.python.org" },
+  { node: <SiDocker />, title: "Docker", href: "https://www.docker.com" },
+  { node: <SiGit />, title: "Git", href: "https://git-scm.com" },
+  { node: <SiMysql />, title: "MySQL", href: "https://www.mysql.com" },
+  { node: <SiC />, title: "C", href: "https://cppreference.com/w/c.html" },
+  { node: <SiArduino />, title: "Arduino", href: "https://www.arduino.cc" },
+  { node: <SiRaspberrypi />, title: "Raspberry Pi", href: "https://www.raspberrypi.com" },
+  { node: <SiMqtt />, title: "MQTT", href: "https://mqtt.org" },
+  { node: <GiCircuitry />, title: "Circuitry" },
+  { node: <SiAutodesk />, title: "Autodesk Fusion 360", href: "https://www.autodesk.com/products/fusion-360/overview" },
+  { node: <GiBeehive />, title: "Beehive" },
+  { node: <CgBee />, title: "Bee" },
+  { node: <GiHoneycomb />, title: "Honeycomb" },
+  { node: <FaMicrochip />, title: "Microchip" },
+  { node: <TbCircuitDiode />, title: "Diode" },
+  { node: <TbCircuitResistor />, title: "Resistor"},
+  { node: <FaNetworkWired />, title: "Networking" },
+  { node: <FaCanadianMapleLeaf />, title: "Canada baby" },
+  { node: <GiHockey />, title: "Ice Hockey" },
+  { node: <MdEngineering />, title: "Engineering", href: "https://www.apegs.ca/" },
+
+];
+
 
 export default function Home() {
   return (
@@ -11,7 +54,7 @@ export default function Home() {
             alt="Young me"
             className="w-40 shrink-0 rounded-xl border-2 border-white/20 shadow-lg"
           />
-
+          {/* Intro Section */}
           <div className="text-center sm:text-left">
             <TextType text="Hello, I'm Darian. Welcome to my website!"
                     className="text-3xl font-bold tracking-tight"
@@ -45,6 +88,29 @@ export default function Home() {
         </div>
       </div>
 
+      {/* Logo loop (Tools) */}
+      <div className="mt-8">
+        <div className="rounded-2xl border border-white/10 bg-white/10 shadow-xl backdrop-blur">
+          <div className="relative h-[140px] overflow-hidden px-6 flex items-center">
+            <LogoLoop
+              logos={toolLogos}
+              speed={50}
+              direction="left"
+              logoHeight={44}
+              gap={56}
+              hoverSpeed={0}
+              scaleOnHover
+              fadeOut="true"
+              fadeOutWidth={100}
+              fadeOutColor="rgba(0,0,0,0)"
+              ariaLabel="Tools and technologies"
+            />
+          </div>
+        </div>
+      </div>
+
+
+      {/* Info Section */}
       <div className="mt-8 grid gap-4 sm:grid-cols-3">
         <div className="rounded-2xl border border-white/10 bg-white/10 p-5 backdrop-blur">
           <div className="text-sm font-semibold">Focus</div>
@@ -63,10 +129,10 @@ export default function Home() {
           <div className="text-sm font-semibold">Tools</div>
           <p className="mt-2 text-sm text-white/75">
             <li>SystemVerilog, UVM</li>
-            <li>C, Python, Bash, JS, many other languages</li>
+            <li>C,SystemVerilog, Python, Bash, JS, other languages...</li>
             <li>Word, PowerPoint, Excel, etc.</li>
             <li>React/Node</li>
-            <li>Fusion 360</li>
+            <li>Autodesk Fusion 360</li>
             <li>Synopsys</li>
             <li>Raspberry Pi, Arduino</li>
           </p>
