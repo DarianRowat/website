@@ -15,8 +15,9 @@ export default function Home() {
           <div className="text-center sm:text-left">
             <TextType text="Hello, I'm Darian. Welcome to my website!"
                     className="text-3xl font-bold tracking-tight"
-                    encryptedClassName="text-3xl font-bold tracking-tight text-white/60"/>
-            <p className="mt-3 text-lg text-white/85">Get to know me!</p>
+                    encryptedClassName="text-3xl font-bold tracking-tight text-white/60"
+                    loop={false}/>
+            <p className="mt-3 text-lg text-white/85">Here you can get to know me a little better.</p>
 
             <div className="mt-6 grid gap-3 sm:grid-cols-2">
               <a
@@ -25,7 +26,10 @@ export default function Home() {
               >
                 <div className="text-sm font-semibold">About</div>
                 <div className="mt-1 text-sm text-white/75">
-                  Computer Engineering with Software focus at University of Saskatchewan. Graduating April 2026.
+                  Computer Engineering with Software Engineering and Digital Systems focuses at University of Saskatchewan.
+                </div>
+                <div className="mt-1 text-sm text-white/75">
+                  Graduating April 2026.
                 </div>
               </a>
 
@@ -45,19 +49,26 @@ export default function Home() {
         <div className="rounded-2xl border border-white/10 bg-white/10 p-5 backdrop-blur">
           <div className="text-sm font-semibold">Focus</div>
           <p className="mt-2 text-sm text-white/75">
-            Hardware/software co-design, verification, and full-stack projects.
+            Big fan of embedded systems, hardware verification, and telecommunications.
           </p>
         </div>
 
         <div className="rounded-2xl border border-white/10 bg-white/10 p-5 backdrop-blur">
           <div className="text-sm font-semibold">Current</div>
-          <p className="mt-2 text-sm text-white/75">uC/OS-II, UVM, React/Node, and IoT work.</p>
+          <p className="mt-2 text-sm text-white/75">In my final semester I am learning about software analysis, design of advanced digital systems,
+          ethics in engineering, as well as my capstone project.</p>
         </div>
 
         <div className="rounded-2xl border border-white/10 bg-white/10 p-5 backdrop-blur">
           <div className="text-sm font-semibold">Tools</div>
           <p className="mt-2 text-sm text-white/75">
-            Here I will include a list of tools I use and am familiar with.
+            <li>SystemVerilog, UVM</li>
+            <li>C, Python, Bash, JS, many other languages</li>
+            <li>Word, PowerPoint, Excel, etc.</li>
+            <li>React/Node</li>
+            <li>Fusion 360</li>
+            <li>Synopsys</li>
+            <li>Raspberry Pi, Arduino</li>
           </p>
         </div>
       </div>
