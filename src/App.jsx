@@ -3,7 +3,7 @@ import Layout from "./Layout";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
-import PyroShield from "./pages/Projects/PyroShield"; // Project pages
+import PyroShield from "./pages/projects/PyroShield"; // Project pages
 import Contact from "./pages/Contact";
 import Gallery from "./pages/Gallery";
 
