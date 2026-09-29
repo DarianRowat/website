@@ -235,21 +235,19 @@ export default function Gallery() {
                 subtitle={section.subtitle}
               />
 
-              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              <div className="columns-1 gap-4 sm:columns-2 lg:columns-3">
                 {section.items.map((item) => (
                   <button
                     key={item.id}
                     type="button"
                     onClick={() => setActiveId(item.id)}
-                    className="group relative w-full overflow-hidden rounded-xl border border-white/10 bg-white/[0.03] shadow-lg transition duration-300 hover:-translate-y-1 hover:border-highlight/40 hover:shadow-[0_12px_35px_rgba(0,0,0,0.35)]"
+                    className="group mb-4 block w-full break-inside-avoid overflow-hidden rounded-xl border border-white/10 bg-white/[0.03] shadow-lg transition duration-300 hover:-translate-y-1 hover:border-highlight/40 hover:shadow-[0_12px_35px_rgba(0,0,0,0.35)]"
                   >
-                    <div className="aspect-[4/3] w-full overflow-hidden">
-                      <img
-                        src={item.img}
-                        alt=""
-                        className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]"
-                      />
-                    </div>
+                    <img
+                      src={item.img}
+                      alt=""
+                      className="block h-auto w-full transition duration-500 group-hover:scale-[1.03]"
+                    />
                   </button>
                 ))}
               </div>
