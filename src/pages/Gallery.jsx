@@ -5,11 +5,36 @@ const gallerySections = [
   {
     id: "engineering",
     title: "Engineering",
-    subtitle: "Projects & Milestones",
+    //subtitle: "Projects & Milestones",
     items: [
       {
         id: "engineering-1",
         img: "/assets/gallery/hardhatceremony.jpg",
+        height: 900,
+      },
+      {
+        id: "engineering-2",
+        img: "/assets/gallery/Capstone_Demo_Complete.jpg",
+        height: 900,
+      },
+      {
+        id: "engineering-3",
+        img: "/assets/gallery/IronRingCeremony.jpg",
+        height: 900,
+      },
+      {
+        id: "engineering-4",
+        img: "/assets/gallery/GradPic1.jpg",
+        height: 900,
+      },
+      {
+        id: "engineering-5",
+        img: "/assets/gallery/GradPic2.jpg",
+        height: 900,
+      },
+      {
+        id: "engineering-6",
+        img: "/assets/gallery/GradPic3.jpg",
         height: 900,
       },
     ],
@@ -17,7 +42,7 @@ const gallerySections = [
   {
     id: "beekeeping",
     title: "Beekeeping",
-    subtitle: "Work in the Field",
+    //subtitle: "Work in the Field",
     items: [
       {
         id: "beekeeping-1",
@@ -29,12 +54,62 @@ const gallerySections = [
         img: "/assets/gallery/teamonthatgrind.jpg",
         height: 800,
       },
+      {
+        id: "beekeeping-3",
+        img: "/assets/gallery/Work_Bee.jpg",
+        height: 800,
+      },
+      {
+        id: "beekeeping-4",
+        img: "/assets/gallery/Work_Brood_Frame.jpg",
+        height: 800,
+      },
+      {
+        id: "beekeeping-5",
+        img: "/assets/gallery/Work_Hives.jpg",
+        height: 800,
+      },
+      {
+        id: "beekeeping-6",
+        img: "/assets/gallery/Work_Extraction_Room.jpg",
+        height: 800,
+      },
+      {
+        id: "beekeeping-7",
+        img: "/assets/gallery/Work_Loaded_Truck.jpg",
+        height: 800,
+      },
+      {
+        id: "beekeeping-8",
+        img: "/assets/gallery/Work_Crop_Duster.jpg",
+        height: 800,
+      },
+      {
+        id: "beekeeping-9",
+        img: "/assets/gallery/Work_Open_Hives.jpg",
+        height: 800,
+      },
+      {
+        id: "beekeeping-10",
+        img: "/assets/gallery/Work_Open_Hives.jpg",
+        height: 800,
+      },
+      {
+        id: "beekeeping-11",
+        img: "/assets/gallery/Work_Swarm.jpg",
+        height: 800,
+      },
+      {
+        id: "beekeeping-12",
+        img: "/assets/gallery/Work_Swarm_Catch.jpg",
+        height: 800,
+      },
     ],
   },
   {
     id: "travel",
     title: "Travel & Outdoors",
-    subtitle: "Outside the Office",
+    //subtitle: "Outside the Office",
     items: [
       {
         id: "travel-1",
@@ -44,6 +119,26 @@ const gallerySections = [
       {
         id: "travel-2",
         img: "/assets/gallery/bctrip2.jpg",
+        height: 800,
+      },
+      {
+        id: "travel-3",
+        img: "/assets/gallery/Mexico_Chichen_Itza.jpg",
+        height: 800,
+      },
+      {
+        id: "travel-4",
+        img: "/assets/gallery/Mexico_Attire.jpg",
+        height: 800,
+      },
+      {
+        id: "travel-5",
+        img: "/assets/gallery/Mexico_Waterfall.jpg",
+        height: 800,
+      },
+      {
+        id: "travel-6",
+        img: "/assets/gallery/Mexico_Parrot.jpg",
         height: 800,
       },
     ],
