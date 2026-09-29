@@ -125,7 +125,7 @@ export default function Home() {
         <div className="rounded-2xl border border-white/10 bg-black/60 p-5 backdrop-blur">
           <div className="text-sm font-semibold">Current</div>
           <p className="mt-2 text-sm text-white/75">
-          I recently completed my final semester at the University of Saskatchewan. At the moment I am working as a beekeeper at Cornucopia Honey Ltd. located in Langham, Saskatchewan.
+          I recently completed my final semester at the University of Saskatchewan. At the moment I am working as a beekeeper at Cornucopia Honey Ltd. located in Langham, Saskatchewan, where I have been working for 10 years.
           </p>
         </div>
 
