@@ -6,7 +6,7 @@ export default function Projects() {
     {
       link: "/projects/pyroshield",
       text: "Capstone Project: PyroShield",
-      image: "/assets/projects/PyroShield/Full System View.png",
+      image: "/assets/projects/PyroShield/Full_System_View.png",
     },
     {
       link: "https://github.com/darianrowat",
@@ -40,9 +40,9 @@ export default function Projects() {
             speed={15}
             textColor="#ffffff"
             bgColor="rgba(0,0,0,0.8)"
-            marqueeBgColor="#102a33"
-            marqueeTextColor="#67e8f9"
-            borderColor="rgba(103,232,249,0.25)"
+            marqueeBgColor="rgba(0,0,0,0.8)"
+            marqueeTextColor="#ffffff"
+            borderColor="rgba(255,255,255,0.10)"
           />
         </div>
         <Link
