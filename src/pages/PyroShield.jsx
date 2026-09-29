@@ -86,7 +86,7 @@ export default function PyroShield() {
         {/* Image section header */}
         <div className="mb-6 mt-10 flex items-center gap-4">
           <h2 className="shrink-0 text-xl font-semibold tracking-tight sm:text-2xl">
-            System Design
+            Rendered Images in Fusion360
           </h2>
 
           <div className="h-px flex-1 bg-gradient-to-r from-highlight/50 via-white/10 to-transparent" />

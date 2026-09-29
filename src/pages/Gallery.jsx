@@ -49,11 +49,11 @@ const gallerySections = [
         img: "/assets/gallery/onthatgrind.jpg",
         height: 700,
       },
-      {
-        id: "beekeeping-2",
-        img: "/assets/gallery/teamonthatgrind.jpg",
-        height: 800,
-      },
+      // {
+      //   id: "beekeeping-2",
+      //   img: "/assets/gallery/teamonthatgrind.jpg",
+      //   height: 800,
+      // },
       {
         id: "beekeeping-3",
         img: "/assets/gallery/Work_Bee.jpg",

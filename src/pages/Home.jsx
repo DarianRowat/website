@@ -72,7 +72,7 @@ export default function Home() {
               >
                 <div className="text-sm font-semibold">About</div>
                 <div className="mt-1 text-sm text-white/75">
-                  Computer Engineering with Software Engineering and Digital Systems focuses at University of Saskatchewan.
+                  BSE in Computer Engineering with Software Engineering and Digital Systems focuses at University of Saskatchewan.
                 </div>
                 <div className="mt-1 text-sm text-white/75">
                   Graduated June 2026.
@@ -116,29 +116,32 @@ export default function Home() {
       {/* Info Section */}
       <div className="mt-8 grid gap-4 sm:grid-cols-3">
         <div className="rounded-2xl border border-white/10 bg-black/60 p-5 backdrop-blur">
-          <div className="text-sm font-semibold">Focus</div>
+          <div className="text-sm font-semibold">Focuses</div>
           <p className="mt-2 text-sm text-white/75">
-            Big fan of embedded systems, hardware verification, and telecommunications.
+            Big fan of embedded systems, hardware/software testing, and telecommunications.
           </p>
         </div>
 
         <div className="rounded-2xl border border-white/10 bg-black/60 p-5 backdrop-blur">
           <div className="text-sm font-semibold">Current</div>
-          <p className="mt-2 text-sm text-white/75">In my final semester I am learning about software analysis, design of advanced digital systems,
-          ethics in engineering, as well as my capstone project.</p>
+          <p className="mt-2 text-sm text-white/75">
+          I recently completed my final semester at the University of Saskatchewan. At the moment I am working as a beekeeper at Cornucopia Honey Ltd. located in Langham, Saskatchewan.
+          </p>
         </div>
 
         <div className="rounded-2xl border border-white/10 bg-black/60 p-5 backdrop-blur">
-          <div className="text-sm font-semibold">Tools</div>
-          <p className="mt-2 text-sm text-white/75">
-            <li>SystemVerilog, UVM</li>
-            <li>C,SystemVerilog, Python, Bash, JS, other languages...</li>
+          <div className="text-sm font-semibold">Tools I Use</div>
+
+          <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-white/75">
+            <li>C, SystemVerilog, Python, Bash, JS, other languages...</li>
+            <li>UVM</li>
             <li>Word, PowerPoint, Excel, etc.</li>
-            <li>React/Node</li>
+            <li>React / Node</li>
             <li>Autodesk Fusion 360</li>
-            <li>Synopsys</li>
+            <li>Bambu Studio</li>
+            <li>KiCad</li>
             <li>Raspberry Pi, Arduino</li>
-          </p>
+          </ul>
         </div>
       </div>
     </section>
