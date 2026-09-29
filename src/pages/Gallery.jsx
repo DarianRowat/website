@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import Masonry from "../components/Masonry";
+//import Masonry from "../components/Masonry";
 
 const gallerySections = [
   {
@@ -91,17 +91,32 @@ const gallerySections = [
       },
       {
         id: "beekeeping-10",
-        img: "/assets/gallery/Work_Open_Hives.jpg",
-        height: 800,
-      },
-      {
-        id: "beekeeping-11",
         img: "/assets/gallery/Work_Swarm.jpg",
         height: 800,
       },
       {
-        id: "beekeeping-12",
+        id: "beekeeping-11",
         img: "/assets/gallery/Work_Swarm_Catch.jpg",
+        height: 800,
+      },
+      {
+        id: "beekeeping-12",
+        img: "/assets/gallery/Me_Canola.jpg",
+        height: 800,
+      },
+      {
+        id: "beekeeping-13",
+        img: "/assets/gallery/Me_Field_Crew.jpg",
+        height: 800,
+      },
+      {
+        id: "beekeeping-14",
+        img: "/assets/gallery/Swarm_Hand.jpg",
+        height: 800,
+      },
+      {
+        id: "beekeeping-15",
+        img: "/assets/gallery/3ton_Loaded_Harvest.jpg",
         height: 800,
       },
     ],
@@ -145,31 +160,6 @@ const gallerySections = [
   },
 ];
 
-function getColumnCount() {
-  if (typeof window === "undefined") return 1;
-
-  if (window.matchMedia("(min-width: 1500px)").matches) return 5;
-  if (window.matchMedia("(min-width: 1000px)").matches) return 4;
-  if (window.matchMedia("(min-width: 600px)").matches) return 3;
-  if (window.matchMedia("(min-width: 400px)").matches) return 2;
-
-  return 1;
-}
-
-function getMasonryHeight(items, columns) {
-  const gap = 16;
-  const colHeights = new Array(columns).fill(0);
-
-  items.forEach((item) => {
-    const shortestColumn = colHeights.indexOf(Math.min(...colHeights));
-    const itemHeight = item.height / 2;
-
-    colHeights[shortestColumn] += itemHeight + gap;
-  });
-
-  return Math.max(...colHeights, 0);
-}
-
 function GallerySectionHeader({ title, subtitle }) {
   return (
     <div className="mb-5">
@@ -197,7 +187,6 @@ export default function Gallery() {
   );
 
   const [activeId, setActiveId] = useState(null);
-  const [columns, setColumns] = useState(getColumnCount);
 
   const activeIndex = useMemo(
     () => (activeId ? items.findIndex((item) => item.id === activeId) : -1),
@@ -206,15 +195,6 @@ export default function Gallery() {
 
   const active = activeIndex >= 0 ? items[activeIndex] : null;
 
-  useEffect(() => {
-    function handleResize() {
-      setColumns(getColumnCount());
-    }
-
-    window.addEventListener("resize", handleResize);
-
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
 
   useEffect(() => {
     function onKeyDown(e) {
@@ -255,22 +235,23 @@ export default function Gallery() {
                 subtitle={section.subtitle}
               />
 
-              <div
-                style={{
-                  height: `${getMasonryHeight(section.items, columns)}px`,
-                }}
-              >
-                <Masonry
-                  items={section.items}
-                  animateFrom="bottom"
-                  duration={0.6}
-                  stagger={0.05}
-                  scaleOnHover
-                  hoverScale={0.98}
-                  blurToFocus
-                  colorShiftOnHover={false}
-                  onItemClick={(item) => setActiveId(item.id)}
-                />
+              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                {section.items.map((item) => (
+                  <button
+                    key={item.id}
+                    type="button"
+                    onClick={() => setActiveId(item.id)}
+                    className="group relative w-full overflow-hidden rounded-xl border border-white/10 bg-white/[0.03] shadow-lg transition duration-300 hover:-translate-y-1 hover:border-highlight/40 hover:shadow-[0_12px_35px_rgba(0,0,0,0.35)]"
+                  >
+                    <div className="aspect-[4/3] w-full overflow-hidden">
+                      <img
+                        src={item.img}
+                        alt=""
+                        className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]"
+                      />
+                    </div>
+                  </button>
+                ))}
               </div>
             </div>
           ))}
