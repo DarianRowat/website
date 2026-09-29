@@ -75,7 +75,7 @@ export default function Home() {
                   Computer Engineering with Software Engineering and Digital Systems focuses at University of Saskatchewan.
                 </div>
                 <div className="mt-1 text-sm text-white/75">
-                  Graduating April 2026.
+                  Graduated June 2026.
                 </div>
               </a>
 
