@@ -94,6 +94,27 @@ export default function PyroShield() {
           </button>
         </div>
 
+        {/* Demo Video */}
+        <div className="mb-6 mt-10 flex items-center gap-4">
+          <h2 className="shrink-0 text-xl font-semibold tracking-tight sm:text-2xl">
+            Project Explosion Animation
+          </h2>
+
+          <div className="h-px flex-1 bg-gradient-to-r from-highlight/50 via-white/10 to-transparent" />
+        </div>
+
+        <div className="overflow-hidden rounded-2xl border border-white/10 bg-black/80">
+          <div className="aspect-video">
+            <iframe
+              className="h-full w-full"
+              src="https://www.youtube.com/embed/kTOZN0oJyfM"
+              title="PyroShield Project Demo"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            />
+          </div>
+        </div>
+
         {/* Image section header */}
         <div className="mb-6 mt-10 flex items-center gap-4">
           <h2 className="shrink-0 text-xl font-semibold tracking-tight sm:text-2xl">
