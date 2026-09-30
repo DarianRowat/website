@@ -6,6 +6,10 @@ const images = [
     alt: "Complete PyroShield system",
   },
   {
+    src: "/assets/projects/PyroShield/Pyroshield_Full_Logo.png",
+    alt: "PyroShield full logo",
+  },
+  {
     src: "/assets/projects/PyroShield/Full_System_Transparent.png",
     alt: "Transparent view of the PyroShield system",
   },
@@ -65,28 +69,35 @@ export default function PyroShield() {
   return (
     <section className="px-4 py-10 sm:px-6">
       <div className="rounded-2xl border border-white/10 bg-black/60 p-6 shadow-xl backdrop-blur sm:p-8">
-        {/* Header */}
-        <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
-          PyroShield
-        </h1>
+        {/* Hero */}
+        <div className="grid gap-8 rounded-2xl border border-white/10 bg-black/80 p-6 md:grid-cols-2 md:items-center sm:p-8">
+          {/* Logo */}
+          <div className="flex items-center justify-center">
+            <img
+              src={images[1].src}
+              alt={images[1].alt}
+              className="max-h-[260px] w-full max-w-md object-contain"
+            />
+          </div>
 
-        {/* Featured Image */}
-        <button
-          type="button"
-          onClick={() => setActiveImage(images[0])}
-          className="group mt-8 block w-full overflow-hidden rounded-2xl border border-white/10 bg-black/80"
-        >
-          <img
-            src={images[0].src}
-            alt={images[0].alt}
-            className="mx-auto max-h-[650px] w-full object-contain transition duration-300 group-hover:scale-[1.01]"
-          />
-        </button>
+          {/* Featured System Image */}
+          <button
+            type="button"
+            onClick={() => setActiveImage(images[0])}
+            className="group flex items-center justify-center"
+          >
+            <img
+              src={images[0].src}
+              alt={images[0].alt}
+              className="max-h-[300px] w-full max-w-md object-contain transition duration-300 group-hover:scale-[1.02]"
+            />
+          </button>
+        </div>
 
         {/* Image section header */}
         <div className="mb-6 mt-10 flex items-center gap-4">
           <h2 className="shrink-0 text-xl font-semibold tracking-tight sm:text-2xl">
-            Rendered Images in Fusion360
+            Rendered Images in Fusion 360
           </h2>
 
           <div className="h-px flex-1 bg-gradient-to-r from-highlight/50 via-white/10 to-transparent" />
@@ -94,7 +105,7 @@ export default function PyroShield() {
 
         {/* Image Gallery */}
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {images.slice(1).map((image) => (
+          {images.slice(2).map((image) => (
             <button
               key={image.src}
               type="button"
