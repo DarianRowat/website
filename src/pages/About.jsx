@@ -7,9 +7,10 @@ export default function About() {
       <div className="rounded-2xl border border-white/10 bg-black/60 p-6 shadow-xl backdrop-blur sm:p-8">
         <h1 className="text-3xl font-bold tracking-tight">About</h1>
         <p className="mt-4 text-white/85">
-          This is a quick bio about me, my interests, and what I'm currently working on.
+          This is a quick bio about me, some of my interests, as well as current and prior work experience.
         </p>
 
+        {/* Interests Section */}
         <div className="mt-6 grid gap-4 sm:grid-cols-2">
           <div className="rounded-xl border border-white/10 bg-black/80 p-5">
             <div className="text-sm font-semibold">What I'm into</div>
@@ -23,8 +24,9 @@ export default function About() {
             </ul>
           </div>
 
+          {/* Current Work Section */}
           <div className="rounded-xl border border-white/10 bg-black/80 p-5">
-            <div className="text-sm font-semibold">What I'm building</div>
+            <div className="text-sm font-semibold">Current Work</div>
             <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-white/75">
               <li>
                 I am currently working at Cornucopia Honey Ltd. as an apiarist, where I've been working for 10 years.
@@ -32,7 +34,8 @@ export default function About() {
             </ul>
           </div>
 
-          <div className="mt-8 rounded-2xl border border-white/10 bg-black/60 p-6 backdrop-blur sm:p-8">
+          {/* Work History Section */}
+          <div className="mx-auto mt-8 max-w-4xl rounded-2xl border border-white/10 bg-black/60 p-6 backdrop-blur sm:p-8">
             <div className="mb-6 flex items-center gap-4">
               <h2 className="shrink-0 text-xl font-semibold tracking-tight sm:text-2xl">
                 Work History
